@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
      //   print("Hi!")
  UIView.animate(withDuration: 1.25, animations: {
-    self.topSquare.constant = 10
-    self.viewSquare.backgroundColor = UIColor.red
-    self.heightSquare.constant = 300
+    self.topSquare.constant = 40
+    self.viewSquare.backgroundColor = UIColor.yellow
+    self.heightSquare.constant = 500
     
  })
         
