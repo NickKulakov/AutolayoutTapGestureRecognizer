@@ -10,6 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var heightSquare: NSLayoutConstraint!
+    
+    @IBOutlet weak var viewSquare: UIView!
+    @IBOutlet weak var topSquare: NSLayoutConstraint!
+    
+    @IBAction func tap(_ sender: UITapGestureRecognizer) {
+     //   print("Hi!")
+ UIView.animate(withDuration: 1.25, animations: {
+    self.topSquare.constant = 10
+    self.viewSquare.backgroundColor = UIColor.red
+    self.heightSquare.constant = 300
+    
+ })
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
